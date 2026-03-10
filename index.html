@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI Product Portfolio — [Your Name]</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --accent:#0b64b0;
+      --muted:#6b6b6b;
+      --bg:#f6f8fb;
+      --card:#fff;
+      --max-width:1100px;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    body{margin:0;background:var(--bg);color:#111;line-height:1.5}
+    .wrap{max-width:var(--max-width);margin:32px auto;padding:0 20px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#2bb6f1);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav{display:flex;gap:10px;flex-wrap:wrap}
+    nav a{color:var(--accent);text-decoration:none;padding:8px 10px;border-radius:6px}
+    nav a:hover{background:#eaf4ff}
+    .hero{background:linear-gradient(180deg,rgba(11,100,176,0.06),transparent);padding:20px;border-radius:10px;margin-top:18px;display:flex;gap:20px;align-items:center}
+    .hero-left{flex:1}
+    .hero h1{margin:0 0 6px;font-size:22px}
+    .hero p{margin:0;color:var(--muted)}
+    .cta-row{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:#fff;border:1px solid #dceffb;color:var(--accent)}
+    .stats{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+    .stat{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 4px rgba(20,30,60,0.04);min-width:120px;text-align:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:18px}
+    .card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 2px 8px rgba(15,25,40,0.04);display:flex;flex-direction:column;gap:8px}
+    .card h3{margin:0;font-size:16px}
+    .tag{font-size:12px;color:var(--muted)}
+    section{margin-top:28px}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .panel{background:var(--card);padding:12px;border-radius:10px}
+    footer{margin:36px 0 80px;color:var(--muted);font-size:13px}
+    /* project detail toggle */
+    .toggle{cursor:pointer;color:var(--accent);font-weight:600}
+    .hidden{display:none}
+    /* responsive */
+    @media (max-width:880px){
+      .two-col{grid-template-columns:1fr}
+      nav{display:none}
+      header{gap:8px}
+      .mobile-nav{display:flex;gap:8px}
+      .logo{width:40px;height:40px}
+    }
+    /* small helper styles */
+    .small{font-size:13px;color:var(--muted)}
+    .mono{font-family:monospace;font-size:13px}
+    .embed-frame{width:100%;height:320px;border:0;border-radius:8px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef6ff;color:var(--accent);font-size:13px}
+    details summary{cursor:pointer;padding:8px;background:#fff;border-radius:8px}
+    .admin-list{display:flex;flex-direction:column;gap:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <div style="font-weight:700">[Your Name] — AI Product Lead</div>
+          <div class="small">B2B Enterprise SaaS • AI / ML • Product Strategy</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#specs">Specs</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#metrics">Metrics</a>
+        <a href="#research">Research</a>
+        <a href="#demos">Demos</a>
+        <a href="#team">Team</a>
+        <a href="#admin">Admin</a>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1>AI Product Portfolio — [Your Name]</h1>
+        <p>I design and ship scalable AI features for enterprise SaaS: product strategy, model selection, data pipelines, and GTM. I focus on measurable outcomes (ARR, adoption, TTV).</p>
+        <div class="cta-row">
+          <a class="btn" href="mailto:you@company.com">Contact</a>
+          <a class="btn ghost" href="#portfolio">View Portfolio</a>
+          <a class="btn ghost" href="#admin">Maintain</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div style="font-weight:700">+$X.2M</div>
+            <div class="small">ARR Impact</div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:700">60%</div>
+            <div class="small">Avg Productivity Gain</div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:700">Q1–Q4</div>
+            <div class="small">Roadmap Coverage</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width:360px">
+        <div class="panel">
+          <div style="font-weight:700">Featured Project</div>
+          <div class="small" style="margin-top:8px">Automated Contract Review — 60% reduction in review time, pilot with ACME Corp</div>
+          <div style="margin-top:10px">
+            <!-- Replace with your Drive or video link -->
+            <a class="btn" href="#project-1">Open Project</a>
+            <a class="btn ghost" href="https://drive.google.com/drive/folders/YOUR-PUBLIC-FOLDER" target="_blank">Open Folder</a>
+          </div>
+        </div>
+        <div style="height:10px"></div>
+        <div class="panel small">
+          Quick how-to: Click project cards → review PRD, architecture, demo. Only publish sanitized files publicly.
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="two-col">
+        <div>
+          <h2>About / Role</h2>
+          <div class="panel">
+            <p style="margin-top:0">Role: Lead AI Product Manager — responsible for strategy, product requirements, ML lifecycle, and cross-functional delivery for embedded AI features in enterprise SaaS.</p>
+
+            <h4 style="margin-bottom:6px">Core responsibilities</h4>
+            <ul>
+              <li>Product strategy & roadmap — aligning AI features to ARR and retention goals</li>
+              <li>PRDs, success metrics, A/B strategy</li>
+              <li>Model selection, labeling strategy, evaluation & monitoring</li>
+              <li>Stakeholder alignment with Sales, CS, Eng, Data Science</li>
+            </ul>
+
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="https://drive.google.com/file/d/YOUR_RESUME" target="_blank">Resume / CV (PDF)</a></li>
+              <li><a href="https://docs.google.com/document/d/YOUR_PRODUCT_CHARTER" target="_blank">Product Charter (Doc)</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <aside>
+          <div class="panel">
+            <div style="font-weight:700">Contact</div>
+            <div class="small" style="margin-top:6px">you@company.com</div>
+            <div style="margin-top:10px">
+              <a class="pill" href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+            <div style="margin-top:12px">
+              <div style="font-weight:700">Org & Domains</div>
+              <div class="small">AI features: Contract Review, Risk Scoring, Auto-Summarize</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2>Portfolio — Projects</h2>
+      <p class="small">Click a project to expand details, review artifacts, and open the project folder.</p>
+
+      <div class="grid">
+        <!-- Project Card 1 -->
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3>Automated Contract Review</h3>
+              <div class="tag">Q2 2024 • AI • NLP • Legal</div>
+            </div>
+            <div><span class="small">Role: PM</span></div>
+          </div>
+          <div class="small">Problem: Manual contract review taking weeks. Solution: Clause extraction + scoring + reviewer UI.</div>
+          <div style="display:flex;gap:8px;margin-top:auto">
+            <a class="btn" href="#project-1">Open</a>
+            <a class="btn ghost" href="https://drive.google.com/drive/folders/YOUR-PROJECT-FOLDER-1" target="_blank">Folder</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3>Risk Scoring Engine</h3>
+              <div class="tag">Q3 2024 • ML • Scoring</div>
+            </div>
+            <div><span class="small">Role: PM</span></div>
+          </div>
+          <div class="small">Built a scoring service to prioritize customer accounts for renewal & upsell.</div>
+          <div style="display:flex;gap:8px;margin-top:auto">
+            <a class="btn" href="#project-2">Open</a>
+            <a class="btn ghost" href="https://drive.google.com/drive/folders/YOUR-PROJECT-FOLDER-2" target="_blank">Folder</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3>Auto-Summarize for Tickets</h3>
+              <div class="tag">Q1 2025 • NLP • CX</div>
+            </div>
+            <div><span class="small">Role: PM</span></div>
+          </div>
+          <div class="small">Generates concise summaries to reduce triage time and improve SLA adherence.</div>
+          <div style="display:flex;gap:8px;margin-top:auto">
+            <a class="btn" href="#project-3">Open</a>
+            <a class="btn ghost" href="https://drive.google.com/drive/folders/YOUR-PROJECT-FOLDER-3" target="_blank">Folder</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Project detail templates -->
+      <div id="project-1" style="margin-top:20px">
+        <details open>
+          <summary><strong>Project: Automated Contract Review — Project Page Template</strong></summary>
+          <div style="margin-top:12px;display:grid;grid-template-columns:1fr 320px;gap:12px">
+            <div>
+              <div class="panel">
+                <h3 style="margin-top:0">Summary</h3>
+                <p class="small">Timeline: Apr 2024 — Jul 2024 • Team: PM, 2x DS, 3x Eng • Outcome: 60% review time reduction in pilot</p>
+
+                <h4>Problem & Context</h4>
+                <p class="small">Manual contract review took 3–10 days. High variability and missed terms impacted renewals.</p>
+
+                <h4>Goals & Success Metrics</h4>
+                <ul>
+                  <li>Reduce average review time by 50% within pilot</li>
+                  <li>Precision@k for clause extraction ≥ 0.85</li>
+                  <li>Reviewer adoption ≥ 40% in pilot accounts</li>
+                </ul>
+
+                <h4>Approach</h4>
+                <p class="small">Data pipeline: ingestion → labeler → model training (transformers) → inference API → reviewer UI. Iterative AB test on reviewer UI changes.</p>
+
+                <h4>Deliverables</h4>
+                <ul>
+                  <li><a href="https://docs.google.com/document/d/YOUR_PRD_DOC" target="_blank">PRD (Doc)</a></li>
+                  <li><a href="https://drive.google.com/file/d/YOUR_ARCHITECTURE_SLIDE" target="_blank">Architecture diagram (Slide)</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/YOUR-PROJECT-FOLDER-1" target="_blank">Project Folder (Drive)</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=YOUR_VIDEO" target="_blank">Demo video (YouTube)</a></li>
+                </ul>
+
+                <h4>Outcomes</h4>
+                <p class="small"><strong>60%</strong> reduction in review time; <strong>3.9x</strong> reviewer throughput for labelled clauses. Business impact: reduced legal costs, faster deal cycles.</p>
+
+                <h4>Key learnings</h4>
+                <ul>
+                  <li>Precision matters more than recall for reviewer acceptance.</li>
+                  <li>UX for triage drastically affects adoption.</li>
+                </ul>
+              </div>
+            </div>
+
+            <aside>
+              <div class="panel">
+                <div style="font-weight:700">Artifacts (quick)</div>
+                <div style="margin-top:8px" class="small">
+                  <div><a href="https://docs.google.com/document/d/YOUR_PRD_DOC" target="_blank">PRD (Doc)</a></div>
+                  <div><a href="https://drive.google.com/file/d/YOUR_ARCHITECTURE_SLIDE" target="_blank">Arch Diag (Slide)</a></div>
+                  <div><a href="https://drive.google.com/drive/folders/YOUR-PROJECT-FOLDER-1" target="_blank">Folder</a></div>
+                </div>
+                <div style="height:10px"></div>
+
+                <!-- iframe placeholders for demo/video or looker -->
+                <div>
+                  <div class="small" style="margin-bottom:6px">Demo (replace src)</div>
+                  <!-- Replace src with your embed URL (YouTube, Loom, Looker Studio, or hosted page) -->
+                  <iframe class="embed-frame" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Demo video" allowfullscreen></iframe>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </details>
+      </div>
+
+      <!-- Additional project detail templates (project-2, project-3) -->
+      <div id="project-2" style="margin-top:12px">
+        <details>
+          <summary><strong>Project: Risk Scoring Engine — Project Page Template</strong></summary>
+          <div style="margin-top:12px" class="panel">
+            <p class="small">Summary, scope, approach, artifacts and outcomes. Replace with project-specific content and Drive links.</p>
+          </div>
+        </details>
+      </div>
+
+      <div id="project-3" style="margin-top:12px">
+        <details>
+          <summary><strong>Project: Auto-Summarize for Tickets — Project Page Template</strong></summary>
+          <div style="margin-top:12px" class="panel">
+            <p class="small">Summary, scope, approach, artifacts and outcomes. Replace with project-specific content and Drive links.</p>
+          </div>
+        </details>
+      </div>
+
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="case-studies">
+      <h2>Case Studies</h2>
+      <div class="panel">
+        <p class="small">Publish sanitized case studies showing customer, challenge, solution and impact.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px">
+          <div class="card">
+            <h3>ACME Corp — Contract Review</h3>
+            <div class="small">Outcome: 60% time reduction • Pilot</div>
+            <div style="margin-top:10px">
+              <a class="btn" href="https://drive.google.com/file/d/YOUR_CASE_STUDY_PDF" target="_blank">Open Case Study</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Beta Inc — Risk Scoring</h3>
+            <div class="small">Outcome: 20% increase in renewals</div>
+            <div style="margin-top:10px">
+              <a class="btn" href="https://drive.google.com/file/d/YOUR_CASE_STUDY_2" target="_blank">Open Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS & ARCHITECTURE -->
+    <section id="specs">
+      <h2>Product Specs & Architecture</h2>
+      <div class="panel">
+        <p class="small">Source-of-truth docs for engineers & data teams: API specs, architecture diagrams, dataflows, infra decisions.</p>
+        <ul>
+          <li><a href="https://docs.google.com/document/d/YOUR_API_SPEC" target="_blank">API Spec (Doc / OpenAPI)</a></li>
+          <li><a href="https://drive.google.com/file/d/YOUR_ARCH_DIAGRAM" target="_blank">Architecture Diagrams</a></li>
+          <li><a href="https://drive.google.com/drive/folders/YOUR_SPECS_FOLDER" target="_blank">Specs Folder</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap">
+      <h2>Roadmap & Priorities</h2>
+      <div class="two-col">
+        <div class="panel">
+          <h4 style="margin-top:0">Quarterly Roadmap</h4>
+          <p class="small">High-level milestones for the next 4 quarters; dependencies and owner tags.</p>
+          <ol>
+            <li>Q2 — Pilot Contract Review</li>
+            <li>Q3 — Risk Scoring GA</li>
+            <li>Q4 — Platform improvements (data infra)</li>
+            <li>Q1 — Expand to new verticals</li>
+          </ol>
+        </div>
+
+        <aside class="panel">
+          <div style="font-weight:700">Embed Roadmap / Sheet</div>
+          <div class="small" style="margin-top:8px">Replace iframe src with your Google Sheets / Looker Studio publish URL (set sharing appropriately)</div>
+          <iframe class="embed-frame" src="https://docs.google.com/spreadsheets/d/e/YOUR_PUBLISHED_SHEET/pubhtml?widget=true&amp;headers=false"></iframe>
+        </aside>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section id="metrics">
+      <h2>Metrics & Dashboards</h2>
+      <div class="panel">
+        <p class="small">Key metrics: adoption, engagement, model performance (latency, drift), business KPIs.</p>
+
+        <h4>Embedded Dashboard</h4>
+        <p class="small">Replace the iframe src with your Looker Studio or dashboard embed link.</p>
+        <iframe class="embed-frame" src="https://lookerstudio.google.com/reporting/YOUR_REPORT_EMBED_URL"></iframe>
+
+        <h4 style="margin-top:14px">Sample KPI Table</h4>
+        <table style="width:100%;border-collapse:collapse">
+          <thead><tr style="text-align:left"><th style="padding:8px">Metric</th><th style="padding:8px">Value</th><th style="padding:8px">Source</th></tr></thead>
+          <tbody>
+            <tr><td style="padding:8px">Contract Review Time</td><td style="padding:8px">-60%</td><td style="padding:8px">Pilot Looker</td></tr>
+            <tr><td style="padding:8px">Model Precision</td><td style="padding:8px">0.86</td><td style="padding:8px">Evaluation Job</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research & Insights</h2>
+      <div class="panel">
+        <p class="small">User interviews, persona summaries, JTBDs. Keep raw recordings private; publish sanitized notes.</p>
+
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="https://docs.google.com/document/d/YOUR_INTERVIEW_REPO" target="_blank">Interview Repo (Docs)</a></li>
+          <li><a href="https://drive.google.com/drive/folders/YOUR_RESEARCH_FOLDER" target="_blank">Research folder</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DEMOS & PLAYBOOKS -->
+    <section id="demos">
+      <h2>Demos & Playbooks</h2>
+      <div class="panel">
+        <p class="small">Short demo videos, battlecards, sales playbooks and demo scripts.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px">
+          <div class="card">
+            <h3>Contract Review Demo</h3>
+            <div class="small">2 min explainer</div>
+            <iframe class="embed-frame" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
+          </div>
+          <div class="card">
+            <h3>Sales Playbook</h3>
+            <div class="small">One-pager & objection handling</div>
+            <a class="btn" href="https://drive.google.com/file/d/YOUR_SALES_PLAYBOOK" target="_blank">Open Playbook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLATERAL -->
+    <section id="collateral">
+      <h2>Collateral & Customer Assets</h2>
+      <div class="panel">
+        <p class="small">Approved decks, logos, one-pagers, legal-approved assets. Use sanitized copies for public sharing.</p>
+        <a class="btn" href="https://drive.google.com/drive/folders/YOUR_COLLATERAL_FOLDER" target="_blank">Open Collateral Folder</a>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+      <h2>Team & Stakeholders</h2>
+      <div class="panel">
+        <p class="small">Who to contact for what: Eng, DS, Sales, CS owners.</p>
+        <ul>
+          <li><strong>Eng Lead:</strong> name@company.com</li>
+          <li><strong>DS Lead:</strong> name@company.com</li>
+          <li><strong>Sales Owner:</strong> name@company.com</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ADMIN -->
+    <section id="admin">
+      <h2>Admin — Maintenance & Governance</h2>
+      <div class="panel admin-list">
+        <div>
+          <strong>Naming convention (example):</strong>
+          <div class="small mono">YYYYMMDD_ProjectName_Type_Version.ext</div>
+        </div>
+        <div>
+          <strong>Folder structure:</strong>
+          <div class="small">/Portfolio/YYYY/ProjectName/{PRD,Specs,Assets,Demos,CaseStudies}</div>
+        </div>
+        <div>
+          <strong>Monthly checklist</strong>
+          <ul class="small">
+            <li>Update KPI dashboard</li>
+            <li>Review sharing settings for new artifacts</li>
+            <li>Add any new demos or case studies</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Publishing checklist (before external share)</strong>
+          <ol class="small">
+            <li>Sanitize all customer PII</li>
+            <li>Use exported PDFs for case studies</li>
+            <li>Confirm legal approvals for quotes and logos</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small">Created by [Your Name]. To edit: open the HTML file and replace placeholders with your Drive links, files and content. For hosted embed of Drive/Looker, set sharing to appropriate level (domain-only or public link).</div>
+    </footer>
+  </div>
+
+  <script>
+    // Optional: add JS to smoothly scroll to anchors for nicer UX
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const id = this.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ el.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
